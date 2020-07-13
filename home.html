@@ -1,4 +1,3 @@
-<!-- portfolio -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,17 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#e3e3e3">
+    <meta name="Keywords" content="Disinfection Services, Sanitization Services, EPA Approved, Licensed, Electrostatic Spray Systems, COVID-19">
+    <meta name="description" content="California Spray Technology offers sanitization and disinfection services for residential and business spaces.">
     <link rel="preconnect" href="https://www.fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" as="style">
     <link rel="preconnect" href="css/style.css" as="style">
     <link rel="preconnect" href="scripts/main.js" as="script">
-    <link rel="stylesheet"
-        href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Raleway:400,400italic,500,500italic|Raleway+Condensed:400,700|Raleway+Mono:400,500|Material+Icons">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic|Roboto+Condensed:400,700|Roboto+Mono:400,500|Material+Icons&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="apple-touch-icon" href="images/myco-logo.png" width="30px" height="30px"> -->
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="images/myco-logo.png" width="30px" height="30px"> -->
+    <link rel="apple-touch-icon" href="images/logos/cst-icon.png" width="32px" height="32px">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logos/cst-icon.png" width="32px" height="32px">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
@@ -28,36 +28,46 @@
 <body>
 
     <header>
-
+<div class="container">
         <nav>
-            <div class="container">
-                <div class="nav-wrapper cst-nav-wrapper">
-                    <img class="cst-logo brand-logo" src="images/cst-logo.png" height="60px" width="350px">
-                    <ul class="nav-links right hide-on-med-and-down">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#method">Method</a></li>
-                    </ul>
-                </div>
+            <div class="nav-wrapper cst-nav-wrapper">
+                <img class="cst-logo brand-logo hide-on-med-and-down" src="images/logos/cst-logo.png" width="410px" height="55px">
+                <ul class="nav-links right hide-on-med-and-down">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#method">Method</a></li>
+                    <li><a href="#contact_form">Contact</a></li>
+                    <li><a href="/demo">Demo</a></li>
+                </ul>
             </div>
         </nav>
-
+    </div>
     </header>
     <main>
 
         <ul class="sidenav" id="slide-out">
             <li class="closeBtn">
                 <div class="spin">
-                    <a class="sNav sidenav-close" href="#!">
+                    <a class="sNav sidenav-close sidenav-close-icon" href="#!">
                         <img class="close-icon" src="images/icons/close.svg" alt="Close Side Navigation Button">
                     </a>
                 </div>
             </li>
             <li class="sidenav-links">
+                <div class="center">
+                    <img src="images/logos/myco-target_logo.png" alt="Site Logo" width="250px">          
+                </div>
+                <div class="divider"></div>
                 <div class="sidelink">
                     <a class="sidenav-close" href="#services">Services</a>
                 </div>
                 <div class="sidelink">
                     <a class="sidenav-close" href="#method">Method</a>
+                </div>
+                <div class="sidelink">
+                    <a class="sidenav-close" href="#contact_form">Contact</a>
+                </div>
+                <div class="sidelink">
+                    <a class="sidenav-close" a href="/demo">Demo</a>
                 </div>
             </li>
         </ul>
@@ -69,59 +79,17 @@
 
         <a href="#" id="scroll" class="hide-on-small-only" style="display: none;"><span></span></a>
 
-        <section id="main-landing" class="center scrollspy">
+        <section id="main-landing" class="center">
             <div class="landing-section container">
                 <div class="landing-container">
                     <div class="row">
-                        <div class="col s12 m12 l6">
+                        <div class="col s12 m12">
                             <div class="card landing-box transparent shadowless">
                                 <h1 class="landing-text-header white-text">California Spray Technology</h1>
                                 <h3 class='white-text'>Sanitization & Disinfection Services</h3>
                                 <div class="card-content">
-                                    <p class="flow-text white-text">Keep your staff, customers and family safe from
-                                        viruses and bacteria while maintaining your normal routine.</p>
+                                    <p class="flow-text white-text">Let our professionals keep your staff, customers, and family safe from viruses and bacteria while maintaining your normal routine.</p>
                                 </div>
-
-                            </div>
-                        </div>
-                        <div class="col s12 m12 l6">
-                            <div class="landing-box form-section card-panel site-color-cream">
-                                <form id="contact_form" name="contact-form" method="POST" autocomplete="off"
-                                    netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
-                                    <h4 class="center site-color-blue-text">Contact Us</h4>
-                                    <div class="input-field col s12 honeypot">
-                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <i class="material-icons  prefix hide-on-small-only">account_circle</i>
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" class="validate">
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <i class="material-icons  prefix hide-on-small-only">phone</i>
-                                        <label for="number">Number</label>
-                                        <input type="tel" name="number" class="validate">
-                                    </div>
-
-                                    <div class="input-field col s12">
-                                        <i class="material-icons  prefix hide-on-small-only">mail</i>
-                                        <label for="email">Email</label>
-                                        <input type="text" name="email" class="validate">
-                                    </div>
-
-                                    <div class="input-field col s12">
-                                        <i class="material-icons  prefix hide-on-small-only">mode_edit</i>
-                                        <label for="message">How Can We Help?</label>
-                                        <textarea id="textarea" name="message" class="materialize-textarea"></textarea>
-                                    </div>
-                                    <div class="input-field col s12 m6" data-netlify-recaptcha="true"></div>
-                                    <div class="input-field col s12 m6  form-submit">
-                                        <button id="form-btn" class="btn btn-submit right" type="submit"
-                                            value="Submit">Submit
-                                            <i class="material-icons right">send</i>
-                                        </button>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -143,6 +111,8 @@
                                             that are approved by the EPA for effective elimination of viruses and as an
                                             effective treatment method against COVID-19 and bacterial infections.
                                         </p>
+                                        <div class="divider"></div>
+                                        <div class="epa-link center"><a class="site-color-blue-text" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2-covid-19#filter_col1" rel="noopener" target="_blank">See The Full List Of EPA Approved Disinfectants For Use Against COVID-19 <i class="material-icons">launch</i></a></div>
                                     </div>
                                 </div>
                             </div>
@@ -153,9 +123,9 @@
         </section>
 
 
-        <section id="services-section" class="section ">
+        <section id="services" class="section scrollspy">
             <div class="container services-header-container">
-                <h2 id="services" class="scrollspy center section-header site-color-blue-text">Sanitization Services</h2>
+                <h2 class="center section-header site-color-blue-text">Sanitization Services</h2>
                 <p class="center">
                     We provide complete solution coverage on top, underneath,
                     behind all exposed surfaces including: all door handles, door
@@ -178,7 +148,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col s12 m6 l6">
                         <div class="card service-card">
                             <div class="card-image waves-effect waves-block waves-light">
@@ -202,7 +171,9 @@
                 <h2 class="section-header center site-color-blue-text">Our Method</h2>
                 <p class="flow-text">California Spray Technology uses a highly effective <strong>electrostatic spray system</strong> to
                     deliver sanitizers & disinfecting solutions to every surface for complete microscopic coverage of
-                    every unseen nook and cranny.</p>
+                    every unseen nook and cranny.
+                </p>
+                <a href="/demo" class="demo-btn site-color-blue btn-large">View Demo</a>
                 <div class="row">
                     <div class="col s12 m12 l6 method-card">
                         <div class="method-inner center">
@@ -226,15 +197,67 @@
             </div>
         </section>
         
-        <section id="consultation-section">
-            <div class="container consultation-container center">
-                <div class="consultation-card site-color-blue card-panel white-text">
-                    <h2 class="center flow-text">Contact Us Today To Schedule Your Free Consultation</h2>
-                    <a href="#main-landing" class="contact-form-btn waves-effect waves-light btn">Contact Form</a>
-                </div>
-            </div>
+        <section id="contact-section">
             <div class="container">
-                <div class="section"></div>
+                <div class="row">
+                    <div class="col s12 m12 l6">
+                        <div class="card-panel contact-box transparent shadowless">
+                            <h2 class="contact-text-header center white-text">Contact Us</h2>
+                            <p class="center white-text flow-text">Contact Us Today To Schedule Your Free Consultation</p>  
+                            <p class="center flow-text"><a class="contact-number white-text" href="tel:4157475803"><img src="images/icons/phone.svg" alt="Phone Icon" height="28px">415-747-5803</a></p>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        <div class="contact-box form-section card-panel site-color-cream">
+                            <form id="contact_form" class="scrollspy" name="contact-form" method="POST" autocomplete="off"
+                                netlify-honeypot="bot-field" data-netlify="true">
+                                <h4 class="center site-color-blue-text">Contact Us</h4>
+                                <div class="input-field col s12 honeypot">
+                                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons  prefix hide-on-small-only">account_circle</i>
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="validate">
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons  prefix hide-on-small-only">phone</i>
+                                    <label for="number">Number</label>
+                                    <input type="tel" name="number" class="validate">
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <i class="material-icons  prefix hide-on-small-only">mail</i>
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" class="validate">
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <i class="material-icons  prefix hide-on-small-only">mode_edit</i>
+                                    <label for="message">How Can We Help?</label>
+                                    <textarea id="textarea" name="message" class="materialize-textarea"></textarea>
+                                </div>
+                                <!-- <div class="input-field col s11 m6" data-netlify-recaptcha="true"></div> -->
+                                <div class="input-field col s12">
+                                    <button id="form-btn" class="btn site-color-blue right btn-submit" type="submit"
+                                        value="Submit">Submit
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="section"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="section"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -242,7 +265,7 @@
 
     <footer class="center site-color-blue">
         <div class="cst-footer white-text flow-text">
-            <span class="footer-text">California Spray Technology &copy; 2020</span>
+            <span class="footer-text">California Spray Technology &trade; 2020</span>
         </div>
     </footer>
 
