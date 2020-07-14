@@ -133,7 +133,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 .sidenav-links a {
 	color: rgba(255, 255, 255, 0.87);
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .sidenav-links a:hover {
@@ -166,13 +166,15 @@ nav .nav-wrapper ul.nav-links li a:hover {
 /* ---------Home landing--------- */
 
 #main-landing {
-	min-height: 60vh;
+	min-height: 50vh;
+	/* max-height: 1100px; */
 	width: 100vw;
 	background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113));
 }
 
 .landing-box .card-content p {
 	margin-top: 20px;
+	font-size: 1.8rem;
 }
 
 .landing-section {
@@ -194,7 +196,9 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 .covid-holder {
 	position: relative;
-	top: 100px;
+	top: 130px;
+	width: 80%;
+	margin: auto;
 }
 
 #covid {
@@ -209,6 +213,65 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	height: 140px;
 	margin: auto;
 }
+
+.covid-message p {
+	font-size: 1.3rem;
+}
+
+
+
+@media only screen and (max-width:800px) {
+	.covid-message .card-image img {
+		height: 120px;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	.covid-message .card-image img {
+		height: 80px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.covid-holder {
+		position: relative;
+		top: 140px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.covid-holder {
+		position: relative;
+		top: 140px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.card.horizontal.covid-message {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.card.horizontal.covid-message h4 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.card.horizontal.covid-message h4 {
+		font-size: 1.5rem;
+	}
+}
+
+/* @media screen and (max-width: 800px) {
+	.card.horizontal.covid-message .card-content {
+		padding: 12px;
+	}
+} */
 
 .epa-link {
 	font-size: 1.2rem;
@@ -225,30 +288,6 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	vertical-align: middle;
 }
 
-@media only screen and (max-width:1000px) {
-	.covid-message .card-image img {
-		height: 100px;
-		margin: auto;
-	}
-}
-
-.covid-message p {
-	font-size: 1.3rem;
-}
-
-@media screen and (max-width: 1000px) {
-	.covid-holder {
-		position: relative;
-		top: 120px;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.card.horizontal.covid-message {
-		display: flex;
-		flex-direction: column;
-	}
-}
 
 /* ----------------#Method-------------------- */
 
@@ -266,6 +305,12 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 
 /*--------------#Services----------------------*/
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
 
 .services-header-container {
 	margin-top: 60px;
