@@ -167,7 +167,6 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 #main-landing {
 	min-height: 50vh;
-	/* max-height: 1100px; */
 	width: 100vw;
 	background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113));
 }
@@ -194,10 +193,9 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	}
 }
 
-.covid-holder {
+.covid-container {
 	position: relative;
 	top: 130px;
-	width: 80%;
 	margin: auto;
 }
 
@@ -209,7 +207,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	margin: auto;
 }
 
-.covid-message .card-image img {
+.covid-message .card-image .mask-img {
 	height: 140px;
 	margin: auto;
 }
@@ -219,36 +217,36 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 
-
 @media only screen and (max-width:800px) {
-	.covid-message .card-image img {
+	.covid-message .card-image .mask-img {
 		height: 120px;
 		margin: auto;
 	}
 }
 
 @media only screen and (max-width:600px) {
-	.covid-message .card-image img {
+	.covid-message .card-image .mask-img {
 		height: 80px;
 		margin: auto;
 	}
 }
 
 @media screen and (max-width: 992px) {
-	.covid-holder {
+	.covid-container {
 		position: relative;
 		top: 140px;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.covid-holder {
+	.covid-container {
 		position: relative;
-		top: 140px;
+		width: 90%;
+		top: 120px;
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 992px) {
 	.card.horizontal.covid-message {
 		display: flex;
 		flex-direction: column;
@@ -264,14 +262,22 @@ nav .nav-wrapper ul.nav-links li a:hover {
 @media screen and (max-width: 600px) {
 	.card.horizontal.covid-message h4 {
 		font-size: 1.5rem;
+		margin: .5rem 0 .5rem 0;
 	}
 }
 
-/* @media screen and (max-width: 800px) {
-	.card.horizontal.covid-message .card-content {
-		padding: 12px;
+@media screen and (max-width: 600px) {
+	.covid-message p {
+		font-size: 1.1rem;
 	}
-} */
+}
+
+@media screen and (max-width: 600px) {
+	.card.horizontal.covid-message .card-content {
+		padding: 10px 24px 10px 24px;
+	}
+}
+
 
 .epa-link {
 	font-size: 1.2rem;
@@ -286,6 +292,13 @@ nav .nav-wrapper ul.nav-links li a:hover {
 .epa-link i {
 	font-size: 1.2rem;
 	vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+	.epa-link,
+	.epa-link i {
+		font-size: 1.1rem;
+	}
 }
 
 
