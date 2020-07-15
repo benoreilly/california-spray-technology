@@ -353,7 +353,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	cursor: pointer;
 }
 
-.spray-card .spray-trigger i{
+.spray-card .spray-trigger i {
 	font-size: 1.4rem;
 	line-height: 30px;
 }
@@ -368,9 +368,6 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 
 /*--------------#Services----------------------*/
-
-
-
 
 
 .services-header-container {
@@ -508,7 +505,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 
-/* Success Page */
+/* ------Success Page---------- */
 
 .success-container {
 	width: 70%;
@@ -564,8 +561,8 @@ nav .nav-wrapper ul.nav-links li a:hover {
   }
   
 .success-card svg .path {
-stroke-dasharray: 1000;
-stroke-dashoffset: 0;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 0;
 }
 .success-card svg .circle {
 	-webkit-animation: dash .9s ease-in-out;
