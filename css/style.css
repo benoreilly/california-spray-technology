@@ -9,7 +9,8 @@ body {
 }
 
 body {
-	background-color: rgba(247, 251, 225, 0.6);
+	/* background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113)); */
+	background-color: rgba(247, 251, 225, 1.0);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -57,12 +58,18 @@ h2.section-header {
 }
 
 .cst-footer {
-	margin: 20px;
-	font-family: Google Sans;
+	text-rendering: optimizeLegibility;
 }
 
 footer {
-	width: 100%;
+	position: absolute;
+	bottom: 8px;
+	right: 10%;
+	background-color: rgba(247, 251, 225, 1.0);
+	height: 56px;
+	line-height: 56px;
+	width: 80%;
+	border-radius: 8px;
 }
 
 .alert-icon {
@@ -278,7 +285,6 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	}
 }
 
-
 .epa-link {
 	font-size: 1.2rem;
 	margin-top: 12px;
@@ -316,13 +322,55 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	font-size: 1.2rem;
 }
 
+.spray-card  {
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 700px) {
+	.spray-card  {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;	
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.spray-card figure img {
+		max-width: 50%;	
+	}
+}
+
+.spray-card .spray-trigger {
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	width: 30px;
+	height: 30px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.spray-card .spray-trigger i{
+	font-size: 1.4rem;
+	line-height: 30px;
+}
+
+.spray-card .card-reveal {
+	 background-color: rgba(33, 73, 123, .9);
+}
+
+.spray-card .card-reveal p {
+	font-size: 1.2rem;
+}
+
 
 /*--------------#Services----------------------*/
 
 
-@media only screen and (max-width: 600px) {
 
-}
 
 
 .services-header-container {
@@ -354,14 +402,14 @@ nav .nav-wrapper ul.nav-links li a:hover {
 /*--------------#Contact----------------------*/
 
 #contact-section {
-	min-height: 80vh;
+	min-height: 100vh;
 	width: 100vw;
 	background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113));
 }
 
 .contact-box {
 	position: relative;
-	top: 10vh;
+	top: 4vh;
 }
 
 .contact-box:first-of-type {
@@ -372,7 +420,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 .form-section.card-panel {
 	border-radius: 12px;
-	height: 600px;
+	/* height: 600px; */
 }
 
 #contact_form h4 {
@@ -419,6 +467,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 
+
 /* ----Scroll To Top------- */
 
 #scroll {
@@ -458,3 +507,115 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	border: 0;
 }
 
+
+/* Success Page */
+
+.success-container {
+	width: 70%;
+}
+
+@media only screen and (max-width: 800px){
+	.success-container {
+		width: 90%;
+	}
+}
+
+.success-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: .5rem 2rem 1rem 2rem;
+	border: 1px solid #e3e3e3;
+	border-radius: 12px;
+	-webkit-transition: -webkit-box-shadow .25s;
+	transition: -webkit-box-shadow .25s;
+	transition: box-shadow .25s;
+	transition: box-shadow .25s, -webkit-box-shadow .25s;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.success-card img{
+	max-width: 100%;
+	height: auto;
+	margin: 24px;
+}
+
+.success-card span {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-top: 24px;
+}
+
+.success-card p {
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 24px;
+}
+
+#count {
+	font-size: 1.5rem;
+}
+
+.success-card svg {
+	width: 100px;
+	display: block;
+	margin: 40px auto 0;
+  }
+  
+.success-card svg .path {
+stroke-dasharray: 1000;
+stroke-dashoffset: 0;
+}
+.success-card svg .circle {
+	-webkit-animation: dash .9s ease-in-out;
+	animation: dash .9s ease-in-out;
+}
+.success-card svg .line {
+	stroke-dashoffset: 1000;
+	-webkit-animation: dash .9s .35s ease-in-out forwards;
+	animation: dash .9s .35s ease-in-out forwards;
+}
+.success-card svg .check {
+	stroke-dashoffset: -100;
+	-webkit-animation: dash-check .9s .35s ease-in-out forwards;
+	animation: dash-check .9s .35s ease-in-out forwards;
+}
+
+		   
+@-webkit-keyframes dash {
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+  
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+  
+@-webkit-keyframes dash-check {
+	0% {
+		stroke-dashoffset: -100;
+	}
+	100% {
+		stroke-dashoffset: 900;
+	}
+}
+  
+@keyframes dash-check {
+	0% {
+		stroke-dashoffset: -100;
+	}
+	100% {
+		stroke-dashoffset: 900;
+	}
+}
+  

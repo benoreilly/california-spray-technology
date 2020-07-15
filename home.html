@@ -28,18 +28,18 @@
 <body>
 
     <header>
-<div class="container">
-        <nav>
-            <div class="nav-wrapper cst-nav-wrapper">
-                <img class="cst-logo brand-logo hide-on-med-and-down" src="images/logos/cst-logo.png" width="410px" height="55px">
-                <ul class="nav-links right hide-on-med-and-down">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#method">Method</a></li>
-                    <li><a href="#contact_form">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <div class="container">
+            <nav>
+                <div class="nav-wrapper cst-nav-wrapper">
+                    <img class="cst-logo brand-logo hide-on-med-and-down" src="images/logos/cst-logo.png" width="410px" height="55px">
+                    <ul class="nav-links right hide-on-med-and-down">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#method">Method</a></li>
+                        <li><a href="#contact_form">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
 
@@ -53,7 +53,7 @@
             </li>
             <li class="sidenav-links">
                 <div class="center">
-                    <img src="images/logos/cst-logo.png" alt="Site Logo" width="300px" height="50px">          
+                    <img src="images/logos/cst-logo.png" alt="Site Logo" width="320px" height="50px">          
                 </div>
                 
                 <div class="sidelink">
@@ -118,8 +118,7 @@
             </div>
         </section>
 
-
-        <section id="services" class="section scrollspy">
+        <section id="services" class="section scrollspy site-color-cream">
             <div class="container services-header-container">
                 <h2 class="center section-header site-color-blue-text">Sanitization Services</h2>
                 <p class="center">
@@ -158,29 +157,36 @@
             </div>
         </section>
         <!---------->
-        <section class="section neb-divider">
-            <div class="divider"></div>
+        <section class="section neb-divider site-color-cream">
+            <div class="divider site-color-cream"></div>
         </section>
         <!---------->
-        <section id="method" class="section center scrollspy">
+        <section id="method" class="section center scrollspy site site-color-cream">
             <div class="container method-container">
                 <h2 class="section-header center site-color-blue-text">Our Method</h2>
                 <p class="flow-text">
                     California Spray Technology uses a highly effective <strong>electrostatic spray system</strong> to deliver sanitizers & disinfecting solutions to every surface for complete microscopic coverage of every unseen nook and cranny.
                 </p>
                 <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card-panel transparent shadowless">
-                            <img src="images/sprayer-conventional.png" alt="Conventional Sprayer" height="150px">
-                            <h6><strong>Conventional Sprayer</strong></h6>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <div class="card spray-card shadowless">
+                            <figure>
+                                <img class="responsive-img" src="images/sprayer-conventional.png" alt="Conventional Sprayer">
+                                <figcaption><strong>Conventional Sprayer</strong></figcaption>
+                            </figure>
+                            <figure>
+                                <img class="responsive-img" src="images/sprayer-ess.png" alt="ElectroStatic Sprayer">
+                                <figcaption><strong>Electrostatic Sprayer</strong></figcaption>
+                            </figure>
+                            <span class="spray-trigger activator btn-floating site-color-blue"><i class="white-text material-icons">keyboard_arrow_up</i></span>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="white-text material-icons right">close</i></span>
+                                <p class="white-text flow-text">This figure illustrates the electrostatic "wraparound" phenomenon by which the charged spray droplets coat the underside and backside of the spray target.</p>
+                                <p class="white-text">Testing by four major universities comparing ESS with conventional and air-blast sprayers shows 300% better spray penetration and coverage onto hidden areas.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col s12 m6">
-                        <div class="card-panel transparent shadowless">
-                            <img src="images/sprayer-ess.png" alt="ElectroStatic Sprayer" height="150px">
-                            <h6><strong>Electrostatic Sprayer</strong></h6>
-                        </div>
-                    </div>
+          
+                    </div> 
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l6 method-card">
@@ -190,7 +196,8 @@
                             <p class="light center">Electrostatic spray systems expel electrostatically charged droplets
                                 that create a force which pulls the spray towards a target at a force 75 times that of
                                 gravity. The process ensures that the solution makes
-                                contact with all surface bacteria and viruses.</p>
+                                contact with all surface bacteria and viruses.
+                            </p>
                         </div>
                     </div>
                     <div class="col s12 m12 l6 method-card">
@@ -208,17 +215,16 @@
         <section id="contact-section">
             <div class="container">
                 <div class="row">
-                    <div class="col s12 m12 l6">
+                    <div class="col s12 m12 l5">
                         <div class="card-panel contact-box transparent shadowless">
-                            <h2 class="contact-text-header center white-text">Contact Us</h2>
-                            <p class="center white-text flow-text">Contact Us Today To Schedule Your Free Consultation</p>  
+                            <h2 class="contact-text-header center white-text">Questions? Let's Talk</h2>
+                            <p class="center white-text flow-text">Call Us Directly Or Use The Form To Submit A Few Details</p>  
                             <p class="center flow-text"><a class="contact-number white-text" href="tel:4157475803"><img src="images/icons/phone.svg" alt="Phone Icon" height="28px">415-747-5803</a></p>
                         </div>
                     </div>
-                    <div class="col s12 m12 l6">
+                    <div class="col s12 m12 l7">
                         <div class="contact-box form-section card-panel site-color-cream">
-                            <form id="contact_form" class="scrollspy" name="contact-form" method="POST" autocomplete="off"
-                                netlify-honeypot="bot-field" data-netlify="true">
+                            <form id="contact_form" class="scrollspy" name="contact-form" method="POST" autocomplete="off" netlify-honeypot="bot-field" data-netlify="true" action="/success.html">
                                 <h4 class="center site-color-blue-text">Contact Us</h4>
                                 <div class="input-field col s12 honeypot">
                                     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -271,8 +277,8 @@
 
     </main>
 
-    <footer class="center site-color-blue">
-        <div class="cst-footer white-text flow-text">
+    <footer class="center hide-on-med-and-down">
+        <div class="cst-footer flow-text">
             <span class="footer-text">California Spray Technology &trade; 2020</span>
         </div>
     </footer>
