@@ -93,29 +93,16 @@ nav {
 	position: absolute;
 	top: 8px;
 	right: 5%;
-	/* background-color: rgba(247, 251, 225, 1.0); */
 	height: 56px;
 	line-height: 56px;
 	width: 90%;
 	border-radius: 8px;
 }
 
-@media only screen and (max-width: 992px) {
-	nav {
-		background-color: transparent;
-		box-shadow: none;
-	}
-}
-
 nav .cst-nav-wrapper {
 	display: flex;
 	justify-content: space-between;
 }
-
-/* .nav-links {
-	display: flex;
-	justify-content: flex-end;
-} */
 
 nav .cst-icon.brand-logo {
 	position: relative;
@@ -125,7 +112,17 @@ nav .cst-icon.brand-logo {
 
 @media only screen and (max-width: 600px) {
 	nav .cst-icon.brand-logo {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
+	}
+}
+
+nav .cst-icon img {
+	padding-right: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+	nav .cst-icon img {
+		width: 35px;
 	}
 }
 
@@ -180,7 +177,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 .side-nav-logo {
-	margin-top: 5%;
+	margin-top: 10%;
 	opacity: .5;
 }
 
@@ -194,13 +191,13 @@ nav .nav-wrapper ul.nav-links li a:hover {
 .menu-wrap {
 	position: relative;
 	top: 60px;
-	left: 40px;
+	left: 30px;
 	z-index: 100;
 }
 
 .close-icon {
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 }
 
 /* ---------Home landing--------- */
@@ -271,19 +268,6 @@ nav .nav-wrapper ul.nav-links li a:hover {
 		width: 60vw;
 	}
 }
-
-
-/* .landing-header-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.landing-header-container img {
-	width: 80px;
-	height: auto;
-	vertical-align: middle;
-} */
 
 @media screen and (max-width:1000px) {
 	.landing-box {
@@ -392,6 +376,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
 	.epa-link,
 	.epa-link i {
 		font-size: 1.1rem;
@@ -413,7 +398,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	font-size: 1.2rem;
 }
 
-.spray-card  {
+.spray-card {
 	display: flex;
 	justify-content: space-evenly;
 	border-radius: 8px;
@@ -421,36 +406,44 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 @media only screen and (max-width: 700px) {
-	.spray-card  {
+	.spray-card {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;	
+		justify-content: space-evenly;
 	}
 }
 
 @media only screen and (max-width: 700px) {
 	.spray-card figure img {
-		max-width: 50%;	
+		max-width: 50%;
 	}
 }
 
+.service-card .service-trigger,
 .spray-card .spray-trigger {
 	position: absolute;
 	bottom: 4px;
 	right: 4px;
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	margin: 4px;
 	cursor: pointer;
 }
 
+.service-card .service-trigger:hover,
+.spray-card .spray-trigger:hover {
+	border: 1px solid rgba(255, 164, 27, 0.9);
+	background-color: rgba(33, 73, 123, .7);
+}
+
+.service-card .service-trigger i,
 .spray-card .spray-trigger i {
 	font-size: 1.4rem;
-	line-height: 30px;
+	line-height: 35px;
 }
 
 .spray-card .card-reveal {
-	 background-color: rgba(33, 73, 123, .9);
+	background-color: rgba(33, 73, 123, .9);
 }
 
 .spray-card .card-reveal p {
@@ -469,6 +462,20 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	padding-top: 60px;
 }
 
+.service-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-card .card-reveal {
+	background-color: rgba(0, 0, 0, 0.75)
+}
+
+.service-card .card-reveal p{
+	font-size: 1.2rem;;
+}
+
 .residential {
 	height: 400px;
 	display: flex;
@@ -476,7 +483,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	background-image: url('/images/residential-alt.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover; 
+	background-size: cover;
 	border-radius: 12px;
 }
 
@@ -493,12 +500,9 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	width: 100%;
 	height: 100%;
 	border-radius: 12px;
-	backface-visibility: hidden;
-	background: linear-gradient(
-		40deg,
-		rgba(67, 138, 243, 0.5),
-		rgba(255, 242, 166, 0.5)
-	);
+	background: linear-gradient(40deg,
+			rgba(67, 138, 243, 0.5),
+			rgba(255, 242, 166, 0.5));
 }
 
 .commercial {
@@ -506,7 +510,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	background-image: url('/images/commercial-alt.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover; 
+	background-size: cover;
 	border-radius: 12px;
 }
 
@@ -523,25 +527,13 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	width: 100%;
 	height: 100%;
 	border-radius: 12px;
-	backface-visibility: hidden;
-	background: linear-gradient(
-		40deg,
-		rgba(67, 138, 243, 0.5),
-		rgba(255, 242, 166, 0.5)
-	);
-}
-
-.service-card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background: linear-gradient(40deg,
+			rgba(67, 138, 243, 0.5),
+			rgba(255, 242, 166, 0.5));
 }
 
 
-.card-action.cst-card-action:last-child {
-	background-color: rgba(25, 64, 112, .9);
-	border-radius: 0 0 12px 12px;
-}
+
 
 
 /*--------------#Contact----------------------*/
@@ -592,13 +584,14 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-	#contact_form .input-field .prefix ~ label,
-	#contact_form .input-field .prefix ~ input,
-	#contact_form .input-field .prefix ~ textarea {
-	  margin-left: 0;
-	  width: calc(100% - 1rem);
+
+	#contact_form .input-field .prefix~label,
+	#contact_form .input-field .prefix~input,
+	#contact_form .input-field .prefix~textarea {
+		margin-left: 0;
+		width: calc(100% - 1rem);
 	}
-  }
+}
 
 
 .contact-number:hover {
@@ -658,7 +651,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	width: 70%;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
 	.success-container {
 		width: 90%;
 	}
@@ -676,10 +669,10 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	transition: -webkit-box-shadow .25s;
 	transition: box-shadow .25s;
 	transition: box-shadow .25s, -webkit-box-shadow .25s;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.success-card img{
+.success-card img {
 	max-width: 100%;
 	height: auto;
 	margin: 24px;
@@ -705,61 +698,67 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	width: 100px;
 	display: block;
 	margin: 40px auto 0;
-  }
-  
+}
+
 .success-card svg .path {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 0;
 }
+
 .success-card svg .circle {
 	-webkit-animation: dash .9s ease-in-out;
 	animation: dash .9s ease-in-out;
 }
+
 .success-card svg .line {
 	stroke-dashoffset: 1000;
 	-webkit-animation: dash .9s .35s ease-in-out forwards;
 	animation: dash .9s .35s ease-in-out forwards;
 }
+
 .success-card svg .check {
 	stroke-dashoffset: -100;
 	-webkit-animation: dash-check .9s .35s ease-in-out forwards;
 	animation: dash-check .9s .35s ease-in-out forwards;
 }
 
-		   
+
 @-webkit-keyframes dash {
 	0% {
 		stroke-dashoffset: 1000;
 	}
+
 	100% {
 		stroke-dashoffset: 0;
 	}
 }
-  
+
 @keyframes dash {
 	0% {
 		stroke-dashoffset: 1000;
 	}
+
 	100% {
 		stroke-dashoffset: 0;
 	}
 }
-  
+
 @-webkit-keyframes dash-check {
 	0% {
 		stroke-dashoffset: -100;
 	}
+
 	100% {
 		stroke-dashoffset: 900;
 	}
 }
-  
+
 @keyframes dash-check {
 	0% {
 		stroke-dashoffset: -100;
 	}
+
 	100% {
 		stroke-dashoffset: 900;
 	}
 }
-  
