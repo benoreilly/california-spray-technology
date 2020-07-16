@@ -10,7 +10,7 @@ body {
 
 body {
 	/* background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113)); */
-	background-color: rgba(247, 251, 225, 1.0);
+	background-color: rgba(247, 251, 225, 1);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -92,11 +92,11 @@ a.demo-btn:hover {
 nav {
 	position: absolute;
 	top: 8px;
-	right: 37.5%;
-	background-color: rgba(247, 251, 225, 1.0);
+	right: 5%;
+	/* background-color: rgba(247, 251, 225, 1.0); */
 	height: 56px;
 	line-height: 56px;
-	width: 25%;
+	width: 90%;
 	border-radius: 8px;
 }
 
@@ -107,26 +107,52 @@ nav {
 	}
 }
 
-.nav-links {
+nav .cst-nav-wrapper {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
-nav .cst-logo.brand-logo {
+/* .nav-links {
+	display: flex;
+	justify-content: flex-end;
+} */
+
+nav .cst-icon.brand-logo {
 	position: relative;
+	display: inline-flex;
+	font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	nav .cst-icon.brand-logo {
+		font-size: 1.5rem;
+	}
+}
+
+nav .cst-icon img {
+	padding-right: 8px;
 }
 
 nav .nav-wrapper ul.nav-links li a {
 	color: rgba(0, 0, 0, 0.87);
 	color: #fff;
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 44px;
+	font-weight: 400;
 	font-family: Google Sans;
 }
 
 nav .nav-wrapper ul.nav-links li a:hover {
-	color: rgba(15, 51, 255, 0.60);
 	color: #fff;
+}
+
+.nav-links li:last-of-type {
+	border: 2px solid rgba(255, 164, 27, 0.9);
+	border-radius: 12px;
+}
+
+.nav-links li:nth-of-type(2) {
+	margin-right: 20px;
 }
 
 .sidenav {
@@ -137,12 +163,11 @@ nav .nav-wrapper ul.nav-links li a:hover {
 .sidenav-links {
 	display: flex;
 	flex-direction: column;
-	margin-top: 10%;
 	align-items: center;
 }
 
 .sidenav-links a {
-	color: rgba(255, 255, 255, 0.87);
+	color: rgba(255, 255, 255, 0.9);
 	font-size: 2rem;
 }
 
@@ -152,6 +177,11 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 .sidelink {
 	margin: 15px;
+}
+
+.side-nav-logo {
+	margin-top: 5%;
+	opacity: .5;
 }
 
 .sidenav-close-icon {
@@ -195,11 +225,55 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	top: 5vh;
-	margin-top: 20px;
+	align-items: center;
+	justify-content: space-between;
+	top: 10vh;
+	margin-top: 5%;
 }
 
-.landing-header-container {
+.landing-content-container h1 {
+	font-size: 2.6rem;
+	line-height: 90%;
+}
+
+.landing-cta {
+	margin-top: 5%;
+}
+
+.landing-cta a {
+	margin-top: 4%;
+	height: 45px;
+	width: 20vw;
+	line-height: 45px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-transform: none;
+}
+
+.landing-cta a:hover {
+	color: rgba(247, 251, 225, 1.0);
+	background-color: rgba(33, 73, 123, 0.95);
+}
+
+.landing-cta a:focus {
+	color: rgba(33, 73, 123, 0.95);
+	background-color: rgba(247, 251, 225, 1.0);
+}
+
+@media only screen and (max-width: 992px) {
+	.landing-cta a {
+		width: 40vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.landing-cta a {
+		width: 60vw;
+	}
+}
+
+
+/* .landing-header-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -209,7 +283,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	width: 80px;
 	height: auto;
 	vertical-align: middle;
-}
+} */
 
 @media screen and (max-width:1000px) {
 	.landing-box {
@@ -395,12 +469,11 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	padding-top: 60px;
 }
 
-
 .residential {
 	height: 400px;
 	display: flex;
 	justify-content: center;
-	background-image: url('/images/residential.jpg');
+	background-image: url('/images/residential-alt.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover; 
@@ -430,7 +503,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 .commercial {
 	height: 400px;
-	background-image: url('/images/commercial.jpg');
+	background-image: url('/images/commercial-alt.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover; 
