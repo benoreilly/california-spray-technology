@@ -285,6 +285,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 #covid {
 	background-color: #E57373;
+	box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.14), 0 4px 4px -1px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 .covid-message .card-image {
