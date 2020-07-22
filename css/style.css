@@ -300,6 +300,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 #covid {
 	background-color: #4187be;
 	opacity: 0.9;
+	border-radius: 12px;
 }
 
 .covid-message .card-image {
@@ -408,13 +409,12 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 .spray-card .spray-trigger:hover {
-	/* background-color: rgb(33, 74, 123); */
 	opacity: 0.95;
 	transform: scale(1.1);
 }
 
 .spray-card .spray-trigger i {
-	font-size: 2.3rem;
+	font-size: 2.8rem;
 	line-height: 40px;
 }
 
@@ -494,8 +494,9 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	height: 100%;
 	border-radius: 12px;
 	background: linear-gradient(40deg,
-			rgba(67, 138, 243, 0.6),
+			rgba(67, 138, 243, 0.4),
 			rgba(255, 242, 166, 0.4));
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .commercial {
@@ -521,8 +522,9 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	height: 100%;
 	border-radius: 12px;
 	background: linear-gradient(40deg,
-			rgba(67, 138, 243, 0.6),
+			rgba(67, 138, 243, 0.4),
 			rgba(255, 242, 166, 0.4));
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*===#Contact===*/
@@ -532,6 +534,18 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	width: 100vw;
 	background-color: #214a7b;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 90 90'%3E%3Ccircle fill='%231a3c66' cx='45' cy='45' r='11'/%3E%3Cg fill='%234187be' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width:992px) {
+	#contact-section {
+		min-height: 120vh;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	#contact-section {
+		min-height: 120vh;
+	}
 }
 
 .contact-box {
