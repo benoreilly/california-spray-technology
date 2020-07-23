@@ -216,6 +216,19 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 600px) {
+	#main-landing {
+		min-height: 100vh;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	#main-landing {
+		min-height: 90vh;
+	}
+}
+
+
 #main-landing::after {
 	content: '';
     position: absolute;
@@ -242,7 +255,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	top: 5vh;
+	top: 10vh;
 	margin-top: 5%;
 	z-index: 1;
 }
@@ -254,14 +267,14 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 @media only screen and (max-width: 600px) {
 	.landing-content-container h1 {
-		font-size: 2.3rem;
+		font-size: 2.4rem;
 		line-height: 90%;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	.landing-content-container h5 {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -270,6 +283,10 @@ nav .nav-wrapper ul.nav-links li a:hover {
 		font-size: 1.8rem;
 		line-height: 90%;
 	}
+}
+
+p.sub-header {
+	font-size: 1.5rem;
 }
 
 .landing-cta {
@@ -310,7 +327,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	}
 }
 
-@media screen and (max-width:992px) {
+/* @media screen and (max-width:992px) {
 	.landing-box {
 		top: 6vh;
 	}
@@ -320,7 +337,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	.landing-box{
 		top: 3vh;
 	}
-}
+} */
 
 .covid-container {
 	position: relative;
@@ -328,7 +345,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 }
 
 #covid {
-	background-color: #4187be;
+	background-color: #3676ac;
 	opacity: 0.9;
 	border-radius: 12px;
 }
@@ -453,6 +470,10 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 .spray-card .card-reveal p {
 	font-size: 1.5rem;
+}
+
+.method-inner i {
+	color: #f36d29;
 }
 
 @media only screen and (max-width: 1390px) {
@@ -583,6 +604,10 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	top: 4vh;
 }
 
+.contact-box p.center {
+	font-size: 2rem;
+}
+
 .contact-box:first-of-type {
 	display: flex;
 	flex-direction: column;
@@ -641,6 +666,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	right: 10px;
 	bottom: 10px;
 	cursor: pointer;
+	z-index: 100;
 }
 
 #scroll span {
