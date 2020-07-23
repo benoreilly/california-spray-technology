@@ -216,7 +216,6 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	position: relative;
 	min-height: 75vh;
 	width: 100vw;
-	background-image: url('/images/tahoe-resize.webp');
 	background-image: url('/images/laketahoe.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -488,7 +487,6 @@ figcaption {
 
 .spray-card .card-reveal {
 	background-color: rgb(33, 74, 123, 0.95);
-	background-image: url("/images/backgrounds/dot-theme.svg");
 }
 
 .spray-card .card-reveal p {
@@ -532,7 +530,6 @@ figcaption {
 
 .service-card .card-reveal {
 	background-color: rgba(33, 74, 123, 0.9);
-	background-image: url('/images/backgrounds/dot-theme.svg');
 }
 
 .service-card .card-reveal p {
