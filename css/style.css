@@ -73,8 +73,8 @@ footer {
 }
 
 .alert-icon {
-	margin: 6px 6px 0 0;
-	vertical-align: bottom;
+	margin: 0 6px 0 0;
+	vertical-align: top;
 }
 
 .btn-submit:hover,
@@ -345,9 +345,8 @@ p.sub-header {
 }
 
 #covid {
-	background-color: #3676ac;
-	opacity: 0.9;
 	border-radius: 12px;
+	background-color: #fff6e8;
 }
 
 .covid-message .card-image {
@@ -361,6 +360,12 @@ p.sub-header {
 
 .covid-message p {
 	font-size: 1.3rem;
+}
+
+.covid-message .card-stacked span {
+	display: block;
+	font-size: 2rem;
+	margin-right: 10px;
 }
 
 @media only screen and (max-width:800px) {
@@ -427,7 +432,7 @@ p.sub-header {
 	display: flex;
 	justify-content: space-evenly;
 	border-radius: 8px;
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: #fff6e8;
 }
 
 @media only screen and (max-width: 700px) {
