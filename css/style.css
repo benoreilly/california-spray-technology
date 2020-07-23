@@ -278,8 +278,12 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	}
 }
 
+.landing-cta p {
+	font-size: 2.2rem;
+}
+
 @media only screen and (max-width: 600px) {
-	.landing-cta h4 {
+	.landing-cta p {
 		font-size: 1.8rem;
 		line-height: 90%;
 	}
