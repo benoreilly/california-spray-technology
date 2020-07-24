@@ -9,7 +9,7 @@ body {
 }
 
 body {
-	background-color: rgba(255, 248, 225, 0.75);
+	background-color: rgba(255, 248, 225, 0.5);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -80,7 +80,7 @@ footer {
 	border-radius: 8px;
 }
 
-.alert-icon {
+.info-icon {
 	margin: 0 6px 0 0;
 	vertical-align: top;
 }
@@ -216,10 +216,12 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 #main-landing {
 	position: relative;
-	min-height: 75vh;
+	min-height: 80vh;
 	width: 100vw;
 	background-image: url('/images/laketahoe.webp');
 	background-size: cover;
+	background-position: center;
+	background-position-y: top;
 	background-repeat: no-repeat;
 }
 
@@ -231,7 +233,7 @@ nav .nav-wrapper ul.nav-links li a:hover {
 
 @media only screen and (max-width: 600px) {
 	#main-landing {
-		min-height: 100vh;
+		min-height: 95vh;
 	}
 }
 
@@ -242,17 +244,15 @@ nav .nav-wrapper ul.nav-links li a:hover {
     right: 0;
     left: 0;
     bottom: 0;
-	background: rgba(0,0,0,0.4);
-}
-
-.landing-box .card-content p {
-	margin-top: 20px;
-	font-size: 1.8rem;
+	/* background: linear-gradient(180deg,
+		rgba(33, 74, 123, 0.4),
+		rgba(255, 242, 166, 0.3)); */
+	background-color: rgba(0, 0, 0, 0.45);
 }
 
 .landing-section {
-	width: 90%;
-	padding-top: 15px;
+	/* width: 90%; */
+	margin: auto;
 }
 
 .landing-box {
@@ -260,88 +260,79 @@ nav .nav-wrapper ul.nav-links li a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
-	top: 10vh;
-	margin-top: 5%;
+	margin-top: 15%;
+	padding: 10px;
+	border-radius: 60px;
+	background-image: url('/images/backgrounds/dot-theme.svg');
+	background-color: rgba(33, 74, 123, 0.55);
+	/* background-color: rgba(0, 0, 0, 0.3); */
 	z-index: 1;
 }
 
+
+@media only screen and (max-width: 600px) {
+	.landing-box {
+		background-image: none;
+		background-color: rgba(33, 74, 123, 0.65);
+		border-radius: 60px;
+		padding: 0;
+	}
+}
+
+
 .landing-content-container h1 {
-	font-size: 2.8rem;
+	font-size: 3rem;
 	line-height: 90%;
 }
 
 p.sub-header {
 	font-size: 1.5rem;
+	line-height: 90%;
 }
 
 @media only screen and (max-width: 600px) {
 	.landing-content-container h1 {
-		font-size: 2.4rem;
+		font-size: 2.5rem;
 		line-height: 90%;
 	}
 }
 
-.landing-cta p {
-	font-size: 2rem;
-}
-
 @media only screen and (max-width: 600px) {
-	.landing-cta p {
-		font-size: 1.8rem;
+	p.sub-header {
+		font-size: 1.5rem;
 		line-height: 90%;
 	}
 }
 
 .landing-cta {
-	margin-top: 5%;
+	font-size: 2.3rem;
+	line-height: 90%;
 }
 
-.landing-cta a {
-	margin-top: 4%;
-	height: 45px;
-	width: 20vw;
-	line-height: 45px;
-	font-size: 1.5rem;
-	font-weight: 500;
-	text-transform: none;
-}
-
-.landing-cta a:hover,
-.service-trigger:hover {
-	background-color: #ffe8c6;
-	opacity: 0.90;
-	transform: scale(1.1);
-}
-
-.landing-cta a:focus {
-	color: rgba(33, 73, 123, 0.95);
-	background-color: rgba(247, 251, 225, 1.0);
-}
-
-@media only screen and (max-width: 992px) {
-	.landing-cta a {
-		width: 40vw;
-	}
+.landing-cta {
+	margin-top: 8%;
 }
 
 @media only screen and (max-width: 600px) {
-	.landing-cta a {
-		width: 60vw;
+	.landing-cta {
+		font-size: 2rem;
+		line-height: 90%;
+		margin-top: 15%;
 	}
 }
 
-/* @media screen and (max-width:992px) {
+
+@media only screen and (max-width:992px) {
 	.landing-box {
-		top: 6vh;
+		top: 10vh;
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	.landing-box{
-		top: 3vh;
+@media only screen and (max-width:600px) {
+	.landing-box {
+		top: 5vh;
 	}
-} */
+}
 
 .covid-container {
 	position: relative;
@@ -351,7 +342,7 @@ p.sub-header {
 #covid {
 	border-radius: 12px;
 	border: 1px solid #214a7b;
-	background-color: rgba(190, 221, 238, 0.5);
+	background-color: transparent;
 }
 
 .covid-message .card-image {
@@ -435,8 +426,8 @@ p.sub-header {
 
 .spray-card {
 	border-radius: 12px;
-	border: 1px solid #f36d29;
-	background-color: rgba(255, 219, 156, 0.5);
+	border: 1px solid #214a7b;
+	background-color: transparent;
 }
 
 .spray-card-figs {
@@ -590,7 +581,7 @@ figcaption {
 	min-height: 80vh;
 	width: 100vw;
 	background-color: #214a7b;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 90 90'%3E%3Ccircle fill='%231a3c66' cx='45' cy='45' r='11'/%3E%3Cg fill='%234187be' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+	background-image: url("/images/backgrounds/dot-theme.svg");
 }
 
 @media only screen and (max-width:992px) {
