@@ -9,7 +9,7 @@ body {
 }
 
 body {
-	background-color: #ffe8c6;
+	background-color: rgba(255, 248, 225, 0.75);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -19,8 +19,10 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	position: relative;
+	overflow-x: hidden !important;
 	overflow-y: hidden;
 }
+
 
 main {
 	flex: 1 0 auto;
@@ -50,7 +52,7 @@ section.cst-divider .divider {
 }
 
 .cst-secondary {
-	background-color: #ffe8c6;
+	background-color: rgba(255, 248, 225, 1);
 	/* background-color: #fff1d7; */
 }
 
@@ -475,23 +477,6 @@ figcaption {
 	cursor: pointer;
 }
 
-.spray-card .spray-trigger:hover {
-	opacity: 0.95;
-	transform: scale(1.1);
-}
-
-.spray-card .spray-trigger i {
-	font-size: 2.8rem;
-	line-height: 40px;
-}
-
-.spray-card .card-reveal {
-	background-color: rgb(33, 74, 123, 0.95);
-}
-
-.spray-card .card-reveal p {
-	font-size: 1.5rem;
-}
 
 .method-inner i {
 	color: #f36d29;
