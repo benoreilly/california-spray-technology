@@ -9,17 +9,20 @@
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="site-color-blue">
+<body class="cst-primary-alt">
 	<div class="success-container">
-		<div class="success-card site-color-cream">
-			<img src="images/logos/cst-logo.png" alt="California Spray Technology Logo">
+		<div class="success-card">
+			<div class="success-card__logo">
+				<img src="images/logos/cst-target-icon.svg" alt="California Spray Technology Logo" width="64px">
+				<span class="success-card__logo--text">California Spray Technology</span>
+			</div>
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
 				<circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
 				<polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
 			</svg>
 			<span>Success!</span>
 			<p>Thank You For Your Form Submission. Our Team Will Reach Out To You As Quickly As Possible!</p>
-			<p>You'll be automatically redirected to our homepage in <span id="count">5</span> seconds.</p>
+			<p>You'll be automatically redirected to our homepage in <span id="count">10</span> seconds.</p>
 		</div>
 	</div>	
 		
@@ -27,7 +30,7 @@
 
 		window.onload = function(){
 			(function() {
-				var counter = 5;
+				var counter = 10;
 				setInterval(function() {
 					counter--;
 					if (counter >= 0) {
@@ -44,7 +47,7 @@
 		function Redirect() {  
 			window.location.replace("http://www.californiaspraytechnology.com"); 
 		} 
-		setTimeout('Redirect()', 5000);
+		setTimeout('Redirect()', 10000);
 	
 	</script>
 	
