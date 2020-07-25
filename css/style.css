@@ -717,20 +717,26 @@ figcaption {
 }
 
 .success-card img {
-	max-width: 100%;
+	/* max-width: 100%; */
 	height: auto;
-	margin: 24px;
+	margin: 24px 12px 24px 24px;
 }
 
 .success-card__logo {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 }
 .success-card__logo--text {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
-.success-card span {
+@media only screen and (max-width: 700px) {
+	.success-card__logo--text {
+		font-size: 1.5rem;
+	}
+}
+
+.success-card__success-text {
 	font-size: 2.5rem;
 	text-align: center;
 	margin-top: 24px;
