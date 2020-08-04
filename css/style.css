@@ -119,11 +119,16 @@ nav .cst-nav-wrapper {
 nav .cst-icon.brand-logo {
 	position: relative;
 	display: inline-flex;
+}
+
+nav .cst-icon.brand-logo h1 {
 	font-size: 2.5rem;
+	line-height: inherit;
+	margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
-	nav .cst-icon.brand-logo {
+	nav .cst-icon.brand-logo h1 {
 		font-size: 1.3rem;
 	}
 }
@@ -478,10 +483,6 @@ figcaption {
 /* === #Services=== */
 
 
-.services-header-container {
-	margin-top: 60px;
-}
-
 .service-card {
 	display: flex;
 	justify-content: center;
@@ -497,6 +498,12 @@ figcaption {
 	font-size: 1.2rem;
 	font-weight: 500;
 	cursor: pointer;
+}
+
+.service-trigger:hover {
+	background-color: #ffe8c6;
+	opacity: 0.90;
+	transform: scale(1.1);
 }
 
 .service-card .card-reveal {
