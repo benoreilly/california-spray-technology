@@ -70,14 +70,14 @@ h2.section-header {
 
 footer {
 	position: absolute;
-	bottom: 8px;
-	right: 10%;
+	bottom: 0;
+	right: 0;
 	color: #fff;
-	background-color: transparent;
 	height: 56px;
 	line-height: 56px;
-	width: 80%;
-	border-radius: 8px;
+	width: 100%;
+	background-color: #214a7b;
+	background-image: url("/images/backgrounds/dot-theme.svg");
 }
 
 .info-icon {
