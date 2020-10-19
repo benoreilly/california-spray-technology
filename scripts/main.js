@@ -11,9 +11,11 @@ $(document).ready(function(){
     $('.sidenav').sidenav({
         inDuration: 600,
         outDuration: 600,
-        edge: 'left',
+        edge: 'left'
     });
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 0
+    });
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 100) { 
             $('#scroll').fadeIn(600); 
